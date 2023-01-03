@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string> WoojinPlaimm</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="test.qrc">
+    <normaloff>:/new/prefix1/Image/ci_woojin_en.png</normaloff>:/new/prefix1/Image/ci_woojin_en.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>60</width>
+    <height>80</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="Category">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>TBG5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DLG5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TEG5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NCG5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VHG5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DLA5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TEA5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VHARS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VHLRS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THA5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VHS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="Ton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>60</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::InsertAtTop</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Injection">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>60</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>50</y>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>적용</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">NumberAnimation on x{
+to:500
+duration: 1000
+}</string>
+    </property>
+    <property name="text">
+     <string>메인차단기</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>메인터미널</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>부하전류(A)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>170</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>메인전선(SQ)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>170</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>접지전선(SQ)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>차단기 용량(A)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>30</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>기종선택</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>톤수</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>30</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>사출대</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Terminal_SQ">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>270</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Terminal_SQ_PE">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>270</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CB_Kw">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>220</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CB_SQ">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CB_SQ_PE">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>370</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>총 전기용량(Kw)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Current">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>320</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Capacity">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>370</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>420</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>메인트랜스(Kw)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Trans">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>420</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>30</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>외부콘센트</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="EXT_I">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>60</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>16*2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>32*2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QQuickWidget" name="quickWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>681</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="resizeMode">
+     <enum>QQuickWidget::SizeRootObjectToView</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>661</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(204, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_11</zorder>
+   <zorder>Category</zorder>
+   <zorder>Ton</zorder>
+   <zorder>Injection</zorder>
+   <zorder>Search</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>Terminal_SQ</zorder>
+   <zorder>Terminal_SQ_PE</zorder>
+   <zorder>CB_Kw</zorder>
+   <zorder>CB_SQ</zorder>
+   <zorder>CB_SQ_PE</zorder>
+   <zorder>label_10</zorder>
+   <zorder>Current</zorder>
+   <zorder>Capacity</zorder>
+   <zorder>label_12</zorder>
+   <zorder>Trans</zorder>
+   <zorder>label_13</zorder>
+   <zorder>EXT_I</zorder>
+   <zorder>quickWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>681</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="test.qrc"/>
+ </resources>
+ <connections/>
+</ui>

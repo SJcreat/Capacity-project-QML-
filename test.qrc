@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>test.qml</file>
+        <file>Image/ci_woojin_en.png</file>
+        <file>../../Desktop/images.png</file>
+        <file>Image/images.png</file>
+        <file>Image/btn.png</file>
+        <file>Image/btn_image.png</file>
+    </qresource>
+</RCC>
